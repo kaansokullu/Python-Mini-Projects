@@ -12,6 +12,7 @@ This repository contains simple terminal-based projects that I developed to impr
 |------|------|
 | Rock Paper Scissors | A classic rock, paper and scissors game against the computer |
 | Hangman | Guessing the hidden word with limited lifes |
+| Blackjack | A game where you need to keep your score as close as possible to 21 by drawing cards from the deck but if you go over 21, you lose. Once you decide to stop drawing a card, computer will draw a card (if it's not already 21) until it's greater than 16. Finally your score and computer's score will be compared. |
 
 ### 🛠 Tools
 
