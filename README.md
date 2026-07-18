@@ -19,3 +19,4 @@ This repository contains simple terminal-based projects that I developed to impr
 |------|------|
 | Password Generator | A program that creates a password according to your demand |
 | Caesar Cipher | A program that helps you encrypt your messages and allows you to decrypt received messages |
+| Calculator | A calculator project. It can make some basic arithmetic operations like addition, subtraction, multiplication, division, exponentiation and modulo |
