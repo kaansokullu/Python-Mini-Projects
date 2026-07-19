@@ -11,8 +11,9 @@ This repository contains simple terminal-based projects that I developed to impr
 | Project | Description |
 |------|------|
 | Rock Paper Scissors | A classic rock, paper and scissors game against the computer |
-| Hangman | Guessing the hidden word with limited lifes |
+| Hangman | Guessing the hidden word with limited lives |
 | Blackjack | A game where you need to keep your score as close as possible to 21 by drawing cards from the deck but if you go over 21, you lose. Once you decide to stop drawing a card, computer will draw a card (if it's not already 21) until it's greater than 16. Finally your score and computer's score will be compared. |
+| Guess The Number | A number guessing game where you need to find the random generated number between 1 and 100 with limited lives. You can choose the difficulty of the game. If you choose 'easy' you will have 10 lives and if you choose 'hard' you will have 5 lives to guess the number. |
 
 ### 🛠 Tools
 
