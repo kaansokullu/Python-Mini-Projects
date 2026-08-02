@@ -23,9 +23,11 @@ my_screen.onkey(snake.move_down, "Down")
 my_screen.onkey(snake.move_left, "Left")
 my_screen.onkey(snake.move_right, "Right")
 
+motion_speed = 0.15
+
 while True:
     my_screen.update()
-    time.sleep(0.1)
+    time.sleep(motion_speed)
 
     if snake.will_hit_border():
         break
@@ -36,6 +38,7 @@ while True:
         food.placement(snake.snake_parts)
         snake.extend()
         score.score_increase()
+        motion_speed = max(0.05, motion_speed - 0.0025)
 
     if snake.will_hit_tail():
         break
