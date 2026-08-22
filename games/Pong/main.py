@@ -1,6 +1,7 @@
 from turtle import Screen
 from game_field import Field
 from paddle import Paddle
+from ball import Ball
 
 screen = Screen()
 screen.setup(width=1000, height=600)
@@ -11,6 +12,7 @@ screen.tracer(0)
 game_field = Field()
 right_paddle = Paddle((450, 0))
 left_paddle = Paddle((-460, 0))
+ball = Ball()
 
 move_right_paddle_up = False
 move_right_paddle_down = False
@@ -70,7 +72,9 @@ def game_loop():
     if move_left_paddle_up:
         left_paddle.move_up()
     if move_left_paddle_down:
-        left_paddle.move_down() 
+        left_paddle.move_down()
+
+    ball.ball_move()
 
     screen.update()
     screen.ontimer(game_loop, 20)
