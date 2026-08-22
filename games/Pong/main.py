@@ -22,6 +22,8 @@ move_left_paddle_down = False
 can_bounce_right_paddle = True
 can_bounce_left_paddle = True
 
+ball_is_moving = False
+
 def press_right_up():
 	global move_right_paddle_up
 	move_right_paddle_up = True
@@ -54,6 +56,10 @@ def release_left_down():
 	global move_left_paddle_down
 	move_left_paddle_down = False
 
+def start_game():
+    global ball_is_moving
+    ball_is_moving = True
+
 screen.update()
 
 screen.listen()
@@ -67,6 +73,8 @@ screen.onkeyrelease(release_left_up, "w")
 screen.onkeypress(press_left_down, "s")
 screen.onkeyrelease(release_left_down, "s")
 
+screen.onkey(start_game, "space")
+
 def game_loop():
     global can_bounce_right_paddle, can_bounce_left_paddle
     
@@ -79,7 +87,8 @@ def game_loop():
     if move_left_paddle_down:
         left_paddle.move_down()
 
-    ball.ball_move()
+    if ball_is_moving:
+        ball.ball_move()
 
     if not (-280 <= ball.ycor() <= 280):
         ball.bounce_y()
