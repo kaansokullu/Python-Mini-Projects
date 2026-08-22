@@ -102,6 +102,11 @@ def game_loop():
         can_bounce_left_paddle = False
         can_bounce_right_paddle = True
 
+    if ball.xcor() > 480 or ball.xcor() < -490:
+        ball.reset_position()
+        can_bounce_right_paddle = True
+        can_bounce_left_paddle = True
+
     screen.update()
     screen.ontimer(game_loop, 20)
 
