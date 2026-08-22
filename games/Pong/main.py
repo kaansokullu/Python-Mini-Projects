@@ -76,6 +76,9 @@ def game_loop():
 
     ball.ball_move()
 
+    if not (-280 <= ball.ycor() <= 280):
+        ball.bounce_y()
+
     screen.update()
     screen.ontimer(game_loop, 20)
 
