@@ -1,13 +1,13 @@
 from turtle import Turtle
 
 class Paddle(Turtle):
-    def __init__(self, position):
+    def __init__(self, starting_position):
         super().__init__()
         self.shape("square")
         self.color("green1")
         self.shapesize(stretch_wid=4, stretch_len=0.6)
         self.penup()
-        self.goto(position)
+        self.goto(starting_position)
 
     def move_up(self):
         x_cor = self.xcor()

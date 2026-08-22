@@ -2,6 +2,7 @@ from turtle import Screen
 from game_field import Field
 from paddle import Paddle
 from ball import Ball
+from scoreboard import Scoreboard
 
 screen = Screen()
 screen.setup(width=1000, height=600)
@@ -13,6 +14,8 @@ game_field = Field()
 right_paddle = Paddle((450, 0))
 left_paddle = Paddle((-460, 0))
 ball = Ball()
+scoreboard_right = Scoreboard((115, 175))
+scoreboard_left = Scoreboard((-115, 175))
 
 move_right_paddle_up = False
 move_right_paddle_down = False
@@ -76,7 +79,7 @@ screen.onkeyrelease(release_left_down, "s")
 screen.onkey(start_game, "space")
 
 def game_loop():
-    global can_bounce_right_paddle, can_bounce_left_paddle
+    global can_bounce_right_paddle, can_bounce_left_paddle, ball_is_moving
     
     if move_right_paddle_up:
         right_paddle.move_up()
@@ -102,10 +105,22 @@ def game_loop():
         can_bounce_left_paddle = False
         can_bounce_right_paddle = True
 
-    if ball.xcor() > 480 or ball.xcor() < -490:
+    if ball.xcor() > 480:
         ball.reset_position()
+        scoreboard_left.score_increase()
         can_bounce_right_paddle = True
         can_bounce_left_paddle = True
+
+    if ball.xcor() < -490:
+        ball.reset_position()
+        scoreboard_right.score_increase()
+        can_bounce_right_paddle = True
+        can_bounce_left_paddle = True
+
+    if scoreboard_left.score == 11 or scoreboard_right.score == 11:
+        ball_is_moving = False
+        scoreboard_left.game_over()
+        scoreboard_right.game_over()
 
     screen.update()
     screen.ontimer(game_loop, 20)
