@@ -28,6 +28,7 @@ class Obstacle():
     def add_obstacle(self):
         if random.randint(1, 100) < 10:
             number_of_obstacles = random.randint(1, 3)
+            
             for _ in range(number_of_obstacles):
                 new_obstacle = self.create_obstacle()
                 new_obstacle.goto(self.random_position())
