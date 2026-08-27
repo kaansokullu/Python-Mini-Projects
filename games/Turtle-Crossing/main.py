@@ -15,6 +15,9 @@ def game_loop():
     screen.update()
     obstacle.move()
     obstacle.add_obstacle()
+    if turtle_icon.collision_with_obstacle(obstacle.obstacles):
+        print("Game Over")
+        return
     screen.ontimer(game_loop, 20)
 
 
