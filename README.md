@@ -16,6 +16,8 @@ This repository contains simple terminal-based projects that I developed to impr
 | Guess The Number | A number guessing game where you need to find the random generated number between 1 and 100 with limited lives. You can choose the difficulty of the game. If you choose 'easy' you will have 10 lives and if you choose 'hard' you will have 5 lives to guess the number. |
 | Higher Lower | In this game, you're given two things and need to find which one has more follower than the other one. |
 | Snake Game | A classic snake game that as the snake eat foods it will grow and also game will be sped up. |
+| Pong | A classic arcade tennis game where players deflect a ball with paddles to score points. |
+| Turtle Crossing | A game where you will move a turtle upward to reach the top while not touching the moving obstacles. |
 
 ### 🛠 Tools
 
