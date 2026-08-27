@@ -25,6 +25,7 @@ def game_loop():
     if turtle_icon.reach_finish_line():
         score.increase_score()
         turtle_icon.reset_position()
+        obstacle.speed_up()
         
     screen.ontimer(game_loop, 20)
 

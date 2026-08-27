@@ -28,7 +28,7 @@ class Obstacle():
     def add_obstacle(self):
         if random.randint(1, 100) < 10:
             number_of_obstacles = random.randint(1, 3)
-            
+
             for _ in range(number_of_obstacles):
                 new_obstacle = self.create_obstacle()
                 new_obstacle.goto(self.random_position())
@@ -53,3 +53,7 @@ class Obstacle():
         x = 300
         y = random.randint(-200, 250)
         return (x, y)
+
+    def speed_up(self):
+        global MOVING_DISTANCE
+        MOVING_DISTANCE += 2
