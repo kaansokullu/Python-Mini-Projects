@@ -2,7 +2,7 @@ from turtle import Turtle
 import random
 
 COLORS = ["red", "orange", "yellow", "green", "blue", "purple"]
-MOVING_DISTANCE = 10
+MOVING_DISTANCE = 5
 ENDING_POSITION = -300   
 
 class Obstacle():
@@ -21,7 +21,7 @@ class Obstacle():
         return new_obstacle
 
     def beginning_obstacle(self):
-        for i in range(random.randint(10, 25)):
+        for i in range(random.randint(10, 20)):
             new_obstacle = self.create_obstacle()
             new_obstacle.goto(self.random_starting_position())
 
