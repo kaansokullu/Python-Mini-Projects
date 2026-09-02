@@ -30,7 +30,7 @@ def mark_city(city_name):
     turtle.write(city_name, font=("Times New Roman", 13, "normal"))
 
 while time_display.time_left > 0 and score_display.score < 81:
-    player_answer = screen.textinput(title="Guess the City", prompt="Write a city name:").title()
+    player_answer = screen.textinput(title="Guess the City", prompt="Write a city name:").title().strip()
 
     if player_answer == "Istanbul":
         player_answer = "İstanbul"
