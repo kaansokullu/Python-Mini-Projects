@@ -1,12 +1,14 @@
 import turtle
 import pandas as pd
 import score
+import countdown
 
 screen = turtle.Screen()
 screen.setup(width=986, height=510)
 screen.bgpic("blank_turkey_map.png")
 
 score_display = score.Score()
+time_display = countdown.Countdown(screen)
 
 df = pd.read_csv("turkey_cities.csv")
 df["condition"] = False
@@ -27,7 +29,7 @@ def mark_city(city_name):
     turtle.teleport(x_cor, y_cor)
     turtle.write(city_name, font=("Times New Roman", 13, "normal"))
 
-while True:
+while time_display.time_left > 0 and score_display.score < 81:
     player_answer = screen.textinput(title="Guess the City", prompt="Write a city name:").title()
 
     if player_answer == "Istanbul":
@@ -38,5 +40,6 @@ while True:
     if data_check(player_answer):
         mark_city(player_answer)
         score_display.increase_score()
-        
+
+score_display.game_over()
 screen.exitonclick()
