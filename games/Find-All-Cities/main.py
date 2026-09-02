@@ -1,10 +1,12 @@
 import turtle
 import pandas as pd
+import score
 
 screen = turtle.Screen()
 screen.setup(width=986, height=510)
-
 screen.bgpic("blank_turkey_map.png")
+
+score_display = score.Score()
 
 df = pd.read_csv("turkey_cities.csv")
 df["condition"] = False
@@ -35,5 +37,6 @@ while True:
 
     if data_check(player_answer):
         mark_city(player_answer)
-
+        score_display.increase_score()
+        
 screen.exitonclick()
