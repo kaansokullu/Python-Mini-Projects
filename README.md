@@ -18,6 +18,7 @@ This repository contains simple terminal-based projects that I developed to impr
 | Snake Game | A classic snake game that as the snake eat foods it will grow and also game will be sped up. |
 | Pong | A classic arcade tennis game where players deflect a ball with paddles to score points. |
 | Turtle Crossing | A game where you will move a turtle upward to reach the top while not touching the moving obstacles. |
+| Find All Cities | A basic game where you have to find all cities in Turkey in a limited time. |
 
 ### 🛠 Tools
 
@@ -26,3 +27,4 @@ This repository contains simple terminal-based projects that I developed to impr
 | Password Generator | A program that creates a password according to your demand |
 | Caesar Cipher | A program that helps you encrypt your messages and allows you to decrypt received messages |
 | Calculator | A calculator project. It can make some basic arithmetic operations like addition, subtraction, multiplication, division, exponentiation and modulo |
+| Temperature Converter | A project to learn GUI making with tkinter module. This project helps you convert temperature units to each other. |
