@@ -26,5 +26,5 @@ This repository contains simple terminal-based projects that I developed to impr
 |:---|:---:|:---|
 | **Password Generator** | <img src="https://github.com/user-attachments/assets/66e2f21f-afd2-4f9f-8f26-960c594b4db4" width="130" alt="Password Generator"> | A program that creates a password according to your demand |
 | **Caesar Cipher** | <img src="https://github.com/user-attachments/assets/f883ee3f-4161-49ef-a5f4-476b9c395a0b" width="130" alt="Caesar Cipher"> | A program that helps you encrypt your messages and allows you to decrypt received messages |
-| **Calculator** |  | A calculator project. It can make some basic arithmetic operations like addition, subtraction, multiplication, division, exponentiation and modulo |
+| **Calculator** | <img src="https://github.com/user-attachments/assets/4ed771cf-3c84-4978-8f37-157559a1c1c0" width="130" alt="Calculator"> | A calculator project. It can make some basic arithmetic operations like addition, subtraction, multiplication, division, exponentiation and modulo |
 | **Temperature Converter** |  | A project to learn GUI making with tkinter module. This project helps you convert temperature units to each other. |
