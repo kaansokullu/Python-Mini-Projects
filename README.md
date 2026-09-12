@@ -18,7 +18,7 @@ This repository contains simple terminal-based projects that I developed to impr
 | **Snake Game** | <img src="https://github.com/user-attachments/assets/be4113c9-8c29-4500-bda9-c6cd4d33457f" width="130" alt="Snake Game"> | A classic snake game that as the snake eat foods it will grow and also game will be sped up. |
 | **Pong** | <img src="https://github.com/user-attachments/assets/76aaa84c-2b39-4636-ad4d-51a62e39bf17" width="130" alt="Pong"> | A classic arcade tennis game where players deflect a ball with paddles to score points. |
 | **Turtle Crossing** | <img src="https://github.com/user-attachments/assets/cddeda0f-1400-43f2-a12c-5de3e15e7437" width="130" alt="Turtle Crossing"> | A game where you will move a turtle upward to reach the top while not touching the moving obstacles. |
-| **Find All Cities** |  | A basic game where you have to find all cities in Turkey in a limited time. |
+| **Find All Cities** | <img src="https://github.com/user-attachments/assets/3500399b-c379-4837-ad2a-501c01a9cbff" width="130" alt="Find All Cities"> | A basic game where you have to find all cities in Turkey in a limited time. |
 
 ### 🛠 Tools
 
