@@ -154,6 +154,7 @@ def add_to_file():
     else:
         save_or_not = messagebox.askokcancel(title="Confirmation", 
                                             message=f"These are details that are entered: "
+                                            f"\nWebsite: {website}"
                                             f"\nEmail: {email}" 
                                             f"\nPassword: {password}" 
                                             "\nIs it okay to save?")
