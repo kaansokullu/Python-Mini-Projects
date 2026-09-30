@@ -2,7 +2,7 @@
 
 A collection of projects written in Python.
 
-This repository contains simple terminal-based projects that I developed to improve my Python programming skills. New small games and tools will be added as I learn more about programming.
+This repository contains some python-based projects that I developed to improve my Python programming skills. New small games and tools will be added as I learn more about programming.
 
 ## Contents
 
